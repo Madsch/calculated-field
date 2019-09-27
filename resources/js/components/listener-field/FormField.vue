@@ -60,7 +60,7 @@ export default {
 
         calculateValue: _.debounce(function () {
             this.calculating = true;
-
+            this.field_values.resourceId = this.resourceId;
             Nova.request().post(
                 `/codebykyle/calculated-field/calculate/${this.resourceName}/${this.field.attribute}`,
                 this.field_values
