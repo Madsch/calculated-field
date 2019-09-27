@@ -9,6 +9,7 @@
                     :class="errorClasses"
                     :placeholder="field.name"
                     v-model="value"
+                    readonly="readonly"
                 />
 
                 <div class="absolute rotating text-80 flex justify-center items-center pin-y pin-r mr-3" v-show="calculating">
